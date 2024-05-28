@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Productos</h1>
+        <form id="productForm">
+            <label for="productId">ID:</label>
+            <input type="number" id="productId" required>
+            <label for="productName">Nombre:</label>
+            <input type="text" id="productName" required>
+            <label for="productPrice">Precio:</label>
+            <input type="number" id="productPrice" required>
+            <label for="productCategory">Categoría:</label>
+            <input type="text" id="productCategory" required>
+            <button type="submit">Insertar Producto</button>
+        </form>
+        <div class="controls">
+            <label for="searchQuery">Buscar por ID:</label>
+            <input type="number" id="searchQuery">
+            <button id="searchProduct">Buscar Producto</button>
+            <button id="minValue">Menor Valor</button>
+            <button id="maxValue">Mayor Valor</button>
+            <button id="printAll">Imprimir Todos los Nodos</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script type="module" src="src/controllers/script.js"></script>
+</body>
+</html>
+
+
